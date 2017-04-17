@@ -1,12 +1,12 @@
 /*============================FONTS====================*/
 @font-face {
     font-family: Arial-Black;
-    src: url(../fonts/Arial Black.ttf);
+    src: url(../fonts/Arial_Black.ttf);
 }
 
 @font-face {
     font-family: .SFNSDisplay-Regular;
-    src: url(../fonts/System San Francisco Display Regular.ttf);
+    src: url(../fonts/System_San_Francisco_Display_Regular.ttf);
 }
 
 @font-face {
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: Georgia-Bold;
-    src: url(../fonts/Georgia Bold.ttf);
+    src: url(../fonts/Georgia_Bold.ttf);
 }
 
 /*============================UI====================*/
