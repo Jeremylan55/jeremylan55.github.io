@@ -379,7 +379,7 @@ ul {
 /*============================BUTTON====================*/
 button {
   height: 36px;
-  width: 120px;
+  width: 140px;
   font-size: 16px;
   color: #59606E;
   letter-spacing: 0.33px;
@@ -406,14 +406,14 @@ button.ghost.dark:hover {
 button.dark.arrow-right {
   padding-right: 14px;
   background: url(../UI/arrow_right_dark.svg) no-repeat;
-  background-position: 80px center;
+  background-position: 104px center;
 }
 
 
 button.dark.arrow-right:hover {
   padding-right: 14px;
   background: url(../UI/arrow_right_light.svg) no-repeat;
-  background-position: 80px center;
+  background-position: 94px center;
   background-color: #272B32;
 }
 
