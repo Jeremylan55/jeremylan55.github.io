@@ -23,10 +23,16 @@
 body {
   width: 100vw;
   overflow-x: hidden;
+  min-height: 100vh !important;
 }
-.project-container:last-child, section:last-child {
+section:last-child {
   margin-bottom: 64px !important;
 }
+
+.project-container:last-child {
+  margin-bottom: 96px !important;
+}
+
 .container-960 {
   max-width: 960px;
   margin-left: auto;
@@ -83,6 +89,9 @@ body {
   .navigator {
     display: none;
   }
+  .content {
+    min-height: calc(100vh - 246px) !important;
+  }
   button.back {
     margin-left: 16px;
     margin-top: 16px;
@@ -120,6 +129,9 @@ body {
     padding-top: 24px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .content {
+    min-height: calc(100vh - 318px) !important;
   }
   button.back {
     margin-left: 16px;
@@ -167,6 +179,9 @@ body {
     padding-top: 24px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+  .content {
+    min-height: calc(100vh - 318px) !important;
   }
 }
 .project-container>a>.row {
