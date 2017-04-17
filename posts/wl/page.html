@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+	    <meta name="description" content="Jeremy Lan, a full time engineering student, developer and designer at University of Waterloo bring you his best projects">
+		<meta name="keywords" content="Jeremy, Lan, Jeremy Lan, Jeremy Lan Hing Po, designer, developer, artist,engineer, mechatronics,waterloo,co op, resume, portfolio, art,iOS, web development, ionic, javascript, talent, University of Waterloo">
+	    <meta name="author" content="Jeremy Lan">
+	    <link href="../../assets/css/animate.css" rel="stylesheet">
+	    <link href="../../assets/css/style.css" rel="stylesheet">
+	    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+	    <link rel="icon" type="image/png" href="icon.png">
+
+	    <link rel="apple-touch-icon" sizes="57x57" href="../../assets/UI/ios/76.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="../../assets/UI/ios/120.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="../../assets/UI/ios/152.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="../../assets/UI/ios/180.png" />
+
+
+	   	<title>Jeremy Lan</title>
+
+	</head>
+	<body>
+
+		<div id="start" class="banner" style="background: url(img/banner.jpg); background-position: center bottom; background-size:cover;">
+			<div class="container-960">
+				<a href="../../index.html"><button class="back dark"></button></a>
+			</div>
+		</div>
+
+		<div class="mock-preview"><img src="img/wheelo.png" alt=""></div>
+
+		<div class="container-960 title align-centre animated fadeIn">Wheelo</div>
+
+		<section class="container-960 animated fadeInUp">
+			<div class="divider"></div>
+			<h2>DESIGN BRIEF</h2>
+			<p class="body">Wheelo is an app that let University of Waterloo and
+				Laurier students plan and travel at a low price in between Cities.</p>
+			<p class="body">During the winter of 2017, I lead the UX, visual design,
+				user research and product roadmap of Wheelo. The main objectives for the
+				 MVP of Wheelo were to make the process of finding a carpool in only a
+				 few taps and to build our user base as quickly as possible. Therefore
+				 a multiplatform app was needed, both for iOS and Android.</p>
+		</section>
+
+		<section class="container-960 animated fadeInUp">
+			<div class="divider"></div>
+			<h2>User Research</h2>
+			<p class="body">The first step was to determine what was the struggles
+				and how did people found carpools. It was also crucial to determine the
+				level of difficulty at the touch points of the current process.
+				I create an online form that would take only a few minutes to fill and
+				posted it on social networks to understand real users. The gif below
+				shows the questionnaire used.</p>
+				 <p class="body">Base on the generous data I received, the user's
+					 journey map with critical touchpoints was created. The diagram below
+					 shows the touchpoints that create the most friction as orange peaks.
+					 This helped me to prioritise the problems and determine the
+					 objectives and constraints that the app needed to achieve.
+				 </p>
+
+				<div class="image row">
+					<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+						<img src="img/questionaire.gif" alt="">
+						<div class="caption align-centre"> Typefrom questionnaire used to collect user data</div>
+					</div>
+					<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+						<img src="img/user_journey.jpg" alt="">
+						<div class="caption align-centre">Users' journey with current system</div>
+					</div>
+				</div>
+
+				<p class="body">The personas of our users where synthesise to help us
+					remind ourselves of the problems that our users were facing and always
+					 design a feature with them in mind. Wheelo has 2 types of users,
+					 driver and passengers. The personas below shows one fictitious user
+					 from each group.
+				</p>
+
+					<h3>Emily: Passenger</h3>
+					<p class="body">Bio
+						Profession: Undergraduate student</br>
+						Location: Toronto</br>
+						Type: passenger</br>
+					</p>
+					<p class="body">
+						Background</br>
+						Emily is an undergrad student from University of waterloo. She
+						rents an apartment with other classmates in the surroundings of
+						the university.  She has courses through Monday to Thursday and
+						prefers to return home in Toronto on Thursday and come back to
+						waterloo on Sunday evenings. She usually either share a ride with
+						her friend or looks for a carpool.
+					</p>
+
+					<p class="body">
+						Motivations</br>
+						She chooses to carpool for the time saved in doing so. She always
+						looks for the option which is cheaper and requires less effort.
+					</p>
+
+					<p class="body">
+						Frustrations</br>
+						She finds it hard to go through a dozen or poorly written post to
+						find the one that she is interested in.  The time spent looking
+						for a matching carpool is a downer for her and prefers to ask a
+						friend first.
+					</p>
+
+					<h3>Kevin: Driver</h3>
+					<p class="body">Bio</br>
+						Profession: Undergraduate student</br>
+						Location: Toronto</br>
+						Type: driver</br>
+					</p>
+					<p class="body">
+						Background</br>
+						Kevin a graduate student of waterloo. He is doing research for
+						the university. He lives alone and has a car that he uses
+						regularly to got to school and drive home during the weekends.
+					</p>
+
+					<p class="body">
+						Motivations</br>
+						He thinks about saving a bit of cash when he drives home by
+						 driving other carpoolers. He wants to get people quickly and
+						 regularly. To be able to do so he was to be able to post his
+						 ad quickly and easily.
+					</p>
+
+					<p class="body">
+						Frustrations</br>
+						He always posts on multiple pages weekly. He thinks that
+						needing to repost or rewrite is a waste of time.
+					</p>
+
+		</section>
+
+		<section class="container-960 animated fadeInUp">
+			<div class="divider"></div>
+			<h2>DESIGN</h2>
+
+			<p class="body">Sticking to the click mentality, the focus was to design
+				the search bar that let them find their carpool with the less amount
+				of input. The diagram below demonstrates the logic map to achieve
+				the minimum amount of steps to find a carpool.</p>
+
+				<div class="image row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<img src="img/logic_diagram.jpg" alt="">
+						<div class="caption align-centre">logic diagram</div>
+					</div>
+				</div>
+
+				<p class="body">After determining the logic of the app, I designed how
+					the user would interact with the app. To achieve this I start by doing
+					 rough sketches of the states of the different screens required.
+					 Below is the chosen paper prototype for the app.</p>
+
+					 <div class="image row">
+	 					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+	 						<img src="img/paper_prototype.jpg" alt="">
+	 						<div class="caption align-centre">Paper prototype for the Home screen and search bar</div>
+	 					</div>
+	 				</div>
+
+		</section>
+
+		<section class="container-960 animated fadeInUp">
+			<div class="divider"></div>
+			<h2>VISUAL LANGUAGE</h2>
+
+			<p class="body">The next step involves fleshing out those concepts into a
+				tangible and coherent tool. To achieve this, I designed the iconography
+				and typography following a strict code. For example, the icons in the
+				app were made using the icon grid principle that enables irregular
+				shapes to fit pleasantly and have the same weight on screen.
+				Furthermore to inject a bit of personality to the icons so that users
+				can always recognise Wheelo, was to give them a rounded edge on
+				one side only.</p>
+
+				<div class="image row">
+					<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+						<img src="img/icon_grid.jpg" alt="">
+						<div class="caption align-centre">Icons designed using grid to normalise visual weight</div>
+					</div>
+				</div>
+
+				<p class="body">In designing the onboarding, this style can also bee
+					seen in the illustrations. The illustrations' colours were restricted
+					to the current palette of the app and where made using simple
+					juxtapose geometry to make them highly rememberable. </p>
+
+					<div class="image row">
+						<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+							<img src="img/illu_guideline.jpg" alt="">
+							<div class="caption align-centre">Illustration made by juxtaposing simple shapes</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<img src="img/onboarding_1.jpg" alt="">
+							<div class="caption align-centre">Illustration 1</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<img src="img/onboarding_2.jpg" alt="">
+							<div class="caption align-centre">Illustration 2</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<img src="img/onboarding_3.jpg" alt="">
+							<div class="caption align-centre">Illustration 3</div>
+						</div>
+					</div>
+
+		</section>
+
+		<section class="container-960 animated fadeInUp">
+			<div class="divider"></div>
+			<h2>PROTOTYPING</h2>
+
+			<p class="body">
+				A high fidelity prototype was made using sketch and illustrator.
+				To communicate the designs properly with the rest of the team, I used
+				"Marvel" to show the user flow and "Zeplin" for dimensioning.
+			</p>
+				<div class="image row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<img src="img/screens.jpg" alt="">
+						<div class="caption align-centre">Screens mades using "Sketch"</div>
+					</div>
+					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+						<img src="img/zeplin.png" alt="">
+						<div class="caption align-centre">"Zeplin"</div>
+					</div>
+					<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+						<iframe src="https://marvelapp.com/365jj9e?emb=1" width="452" height="500" allowTransparency="true" frameborder="0"></iframe>
+						<div class="caption align-centre">"Marvel" prototype</div>
+					</div>
+				</div>
+		</section>
+
+		<section class="container-960 animated fadeInUp">
+			<div class="divider"></div>
+			<h2>DEVELOPMENT</h2>
+
+			<p class="body">Due to tight deadlines and the need for use to reach the
+				largest amount of users, we used Ionic framework for developing a
+				cross-platform product. I got the opportunity to work with this tool
+				and sharpen my skill with angular and web mobile frameworks.</p>
+
+				<div class="image row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<img src="img/ionic.png" alt="">
+						<div class="caption align-centre">Ionic framework used to develop Wheelo</div>
+					</div>
+					<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+						<img src="img/coming_soon.jpg" alt="">
+					</div>
+				</div>
+		</section>
+
+
+		<section class="container-960 animated fadeInUp">
+			<div class="divider"></div>
+			<h2>SELF CRITIQUE</h2>
+
+			<p class="body">A lot of time spent to in exploring different alternatives for the search bar with is a critical feature. This can linger and delay development. I also was able to empathise with the pain of the developers when translating mocks to code when we need to support every screen size..</p>
+		</section>
+
+
+
+		<div class="container-960">
+			<div class="navigator">
+				<ul class="no-style">
+					<div id="previous" class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><li class="previous"><a href="">Next</a></li></div>
+					<div id="top" class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><li class="top"><a href="#start">Back to Top</a></li></div>
+					<div id="next" class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><li class="next"><a href="">Previous</a></li></div>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<div class="container-960">
+			<ul class="split-5 no-style">
+				<li id="dribbble"><div><a href=""><div class="footer-icon"></div></a></div></li>
+				<li id="artstation"><div><a href=""><div class="footer-icon"></div></a></div></li>
+				<li id="github"><div><a href=""><div class="footer-icon"></div></a></div></li>
+				<li id="mail"><div><a href=""><div class="footer-icon"></div></a></div></li>
+				<li id="resume"><div><a href=""><div class="footer-icon"></div></a></div></li>
+			</ul>
+			<div class="signature">Designed and coded with ♥ by Jeremy Lan</div>
+		</div>
+	</footer>
+	<script src="../../assets/js/jquery-3.1.0.min.js"></script>
+	<script src="../../assets/js/imagelightbox.min.js"></script>
+	<script src="../../assets/js/bootstrap.js"></script>
+	<script src="../../assets/js/script.js"></script>
+</html>
