@@ -56,7 +56,7 @@ section:last-child {
     width: 110%;
     margin-left: -5%;
     margin-right: -5%;
-    margin-bottom: -40%;
+    margin-bottom: -80px;
     position: relative;
   }
   .description {
@@ -73,7 +73,8 @@ section:last-child {
     border-top: 0px !important;
     border-left: 0px !important;
     border-right: 0px !important;
-    border-bottom: 2px solid #E9E9E9 !important;
+    border-bottom: none !important;
+    border-top: 2px solid #E9E9E9 !important;
   }
 
   .project-container:last-child>a>.row {
@@ -95,6 +96,15 @@ section:last-child {
   button.back {
     margin-left: 16px;
     margin-top: 16px;
+  }
+  .reverse-col {
+    transform: rotate(180deg);
+    direction: rtl; /* Fix the horizontal alignment */
+  }
+
+  .reverse-col > [class*="col-"] {
+    transform: rotate(-180deg);
+    direction: ltr; /* Fix the horizontal alignment */
   }
 }
 @media screen and (min-width: 500px) and (max-width: 768px) {
@@ -404,14 +414,14 @@ button.ghost.dark:hover {
 }
 
 button.dark.arrow-right {
-  padding-right: 14px;
+  padding-right: 19px;
   background: url(../UI/arrow_right_dark.svg) no-repeat;
   background-position: 104px center;
 }
 
 
 button.dark.arrow-right:hover {
-  padding-right: 14px;
+  padding-right: 19px;
   background: url(../UI/arrow_right_light.svg) no-repeat;
   background-position: 94px center;
   background-color: #272B32;
