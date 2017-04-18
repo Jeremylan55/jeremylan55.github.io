@@ -20,11 +20,12 @@
 }
 
 /*============================UI====================*/
-body {
-  width: 100vw;
-  overflow-x: hidden;
-  min-height: 100vh !important;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh !important;
 }
+
 section:last-child {
   margin-bottom: 64px !important;
 }
