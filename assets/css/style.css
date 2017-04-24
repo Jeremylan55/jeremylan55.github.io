@@ -251,6 +251,11 @@ ul.no-style {
   background-position: center center;
 }
 
+#behance>div>a>.footer-icon {
+  background: url(../UI/behance.svg) no-repeat;
+  background-position: center center;
+}
+
 #artstation>div>a>.footer-icon {
   background: url(../UI/artstation.svg) no-repeat;
   background-position: center center;
