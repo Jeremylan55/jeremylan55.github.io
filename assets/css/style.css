@@ -107,6 +107,17 @@ section:last-child {
     transform: rotate(-180deg);
     direction: ltr; /* Fix the horizontal alignment */
   }
+
+  .signature {
+    text-align: center;
+    font-family: .SFNSDisplay-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.33px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
 }
 @media screen and (min-width: 500px) and (max-width: 768px) {
   .thumbnail-container {
@@ -147,6 +158,16 @@ section:last-child {
   button.back {
     margin-left: 16px;
     margin-top: 16px;
+  }
+
+  .signature {
+    text-align: center;
+    font-family: .SFNSDisplay-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.33px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -193,6 +214,15 @@ section:last-child {
   }
   .content {
     min-height: calc(100vh - 318px) !important;
+  }
+  .signature {
+    text-align: center;
+    font-family: .SFNSDisplay-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.33px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 .project-container>a>.row, .project-container>a:visited>.row {
@@ -513,16 +543,6 @@ h3 {
   margin-bottom: 24px !important;
 }
 
-.signature {
-  text-align: center;
-  font-family: .SFNSDisplay-Regular;
-  font-size: 16px;
-  color: #FFFFFF;
-  letter-spacing: 0.33px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
 .title {
   font-family: Arial-Black;
   font-size: 36px;
@@ -547,4 +567,19 @@ h3 {
 
 .align-centre {
   text-align: center;
+}
+
+.myTitle {
+  text-transform: uppercase !important;
+  font-family: Arial-Black !important;
+  font-size: 48px !important;
+  color: #272B32 !important;
+  letter-spacing: 0.75px !important;
+  line-height: 36px !important;
+  margin-top: 32px !important;
+  margin-bottom: 16px !important;
+}
+
+.intro {
+  margin-bottom: 36px;
 }
