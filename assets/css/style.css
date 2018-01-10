@@ -10,16 +10,38 @@
 }
 
 @font-face {
-    font-family: Georgia;
-    src: url(../fonts/Georgia.ttf);
+    font-family: Diaria-Pro-Regular;
+    src: url(../fonts/Diaria-Pro-Regular.ttf);
+}
+
+@font-face {
+    font-family: Diaria-Pro-Bold;
+    src: url(../fonts/Diaria-Pro-Bold.ttf);
 }
 
 @font-face {
     font-family: Georgia-Bold;
     src: url(../fonts/Georgia_Bold.ttf);
 }
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url(../fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+    font-family: SourceSansPro-Bold;
+    src: url(../fonts/SourceSansPro-Bold.otf);
+}
+
+@font-face {
+    font-family: SourceSansPro-Black;
+    src: url(../fonts/SourceSansPro-Black.otf);
+}
 
 /*============================UI====================*/
+html {
+  background: #272B32;
+}
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -49,15 +71,20 @@ section:last-child {
 }
 
 @media screen and (max-width: 500px) {
+  .description>button {
+    margin-right: calc(100% - 140px) !important;
+    margin-top: 32px;
+  }
+  .splash-text {
+    display: none;
+  }
   .thumbnail-container {
     height: auto;
+    width: 100%;
     margin-left: 0%;
   }
   .thumbnail-container>img {
-    width: 110%;
-    margin-left: -5%;
-    margin-right: -5%;
-    margin-bottom: -80px;
+    width: 100%;
     position: relative;
   }
   .description {
@@ -75,7 +102,7 @@ section:last-child {
     border-left: 0px !important;
     border-right: 0px !important;
     border-bottom: none !important;
-    border-top: 2px solid #E9E9E9 !important;
+    border-top: 2px solid #EDF1F5 !important;
   }
 
   .project-container:last-child>a>.row, .project-container:last-child>a:visited>.row {
@@ -110,7 +137,7 @@ section:last-child {
 
   .signature {
     text-align: center;
-    font-family: .SFNSDisplay-Regular;
+    font-family: SourceSansPro-Regular;
     font-size: 16px;
     color: #FFFFFF;
     letter-spacing: 0.33px;
@@ -120,14 +147,21 @@ section:last-child {
 
 }
 @media screen and (min-width: 500px) and (max-width: 768px) {
+    .description>button {
+      margin-right: calc(100% - 140px) !important;
+      margin-top: 32px;
+    }
+
   .thumbnail-container {
-    height: auto;
+    height: 368px;
+    width: 100%;
     margin-left: 0%;
   }
   .thumbnail-container>img {
-    width: 100%;
+    width: auto;
+    max-height: 100%;
     margin-left: 0%;
-    margin-bottom: -30%;
+    margin-bottom: 0%;
     position: relative;
   }
   .description {
@@ -172,21 +206,40 @@ section:last-child {
 }
 
 @media screen and (min-width: 768px) {
+  .description>button {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    left: 32px;
+  }
   .thumbnail-container {
     height: 368px;
-    margin-left: -10%;
+    margin-left: 0%;
+  }
+
+  ul.chips>li {
+    float: left;
+    color: #272B32;
+    border-radius: 24px;
+    border: 2px solid #272B32;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 24px;
+    width: auto;
+    margin-right: 16px;
+    margin-bottom: 16px;
   }
 
   .thumbnail-container>img {
-    width: 150%;
-    margin-top: -10%;
-    height: auto;
+    width: auto;
+    margin-top: 0%;
+    height: 100%;
     position: absolute;
+    left: 0px;
   }
   .description {
     height: 368px;
     padding-left: 32px !important;
-    padding-right: 32px !important;
+    padding-right: 16px !important;
   }
   .description>button {
     position: absolute;
@@ -225,24 +278,26 @@ section:last-child {
     padding-right: 32px;
   }
 }
-.project-container>a>.row, .project-container>a:visited>.row {
+.project-container>a>.row, .project-container>a:visited>.row, .project-container>.row {
   width: 100%;
   margin: 0px;
-  border: 16px solid #E9E9E9;
+  border: 16px solid #EDF1F5;
+  /*box-shadow: inset 0px 0px 0px 16px #EDF1F5;*/
+  overflow: hidden;
 }
 
 .logo {
-  width: 153px;
-  height: 153px;
-  background: url(../UI/logo.svg) no-repeat;
+  width: 100%;
+  height: 240px;
+  background: url(../UI/Hi.png) no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   margin-left: auto;
   margin-right: auto;
   left: 0px;
   right: 0px;
   margin-top: 64px;
-  margin-bottom: 48px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -253,9 +308,20 @@ footer {
 }
 .split-5 {
   width: 100%;
-  height: 48px;
+  height: 36px;
   padding: 0px;
   margin-bottom: 58px;
+}
+
+.split-3 {
+  max-width: 360px;
+  height: 36px;
+  padding: 0px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0px;
 }
 
 ul.no-style {
@@ -267,62 +333,96 @@ ul.no-style {
   float: left;
 }
 
-.footer-icon {
-  width: 48px;
-  height: 48px;
+.split-3>li>div {
+  width: 33.333%;
+  float: left;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
   margin-left: auto;
   margin-right: auto;
   left: 0px;
   right: 0px;
 }
 
-#dribbble>div>a>.footer-icon {
+.icon:hover {
+  cursor: pointer;
+}
+
+#dribbble>div>a>.icon {
   background: url(../UI/dribbble.svg) no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
-#instagram>div>a>.footer-icon {
+#dribbble>div>a>.icon.dark {
+  background: url(../UI/dribbble_dark.svg) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+#instagram>div>a>.icon {
   background: url(../UI/instagram.svg) no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
-#behance>div>a>.footer-icon {
+#instagram>div>a>.icon.dark {
+  background: url(../UI/instagram_dark.svg) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+#behance>div>a>.icon {
   background: url(../UI/behance.svg) no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
-#artstation>div>a>.footer-icon {
+#artstation>div>a>.icon {
   background: url(../UI/artstation.svg) no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
-#github>div>a>.footer-icon {
+#github>div>a>.icon {
   background: url(../UI/github.svg) no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
-#mail>div>a>.footer-icon {
+#mail>div>a>.icon {
   background: url(../UI/mail.svg) no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
-#resume>div>a>.footer-icon {
+#mail>div>a>.icon.dark {
+  background: url(../UI/mail_dark.svg) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+#resume>div>a>.icon {
   background: url(../UI/resume.svg) no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
 .banner {
   width: 100vw;
   height: 230px;
-  background-color: #272B32;
+  background: none !important;
   margin-bottom: -230px;
 }
 
 .mock-preview {
   pointer-events: none;
-  padding-top: 32px;
-  margin-top: 48px;
-  margin-bottom: 32px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   width: 100%;
   justify-content: center;
   height: 320px;
@@ -345,6 +445,7 @@ section {
 }
 
 section>.divider {
+  display: none;
   height: 4px;
   width: 48px;
   background-color: #272B32;
@@ -431,12 +532,13 @@ ul {
 button {
   height: 36px;
   width: 140px;
-  font-size: 16px;
-  color: #59606E;
+  font-size: 18px;
+  color: #272B32;
   letter-spacing: 0.33px;
   outline: none;
-  font-family: Arial-Black !important;
+  font-family: SourceSansPro-Black !important;
   text-transform: uppercase !important;
+  border-radius: 0px !important;
 
 }
 
@@ -446,6 +548,13 @@ button.ghost.dark {
   color: #272B32;
   -webkit-transition: all 0.15s; /* Safari */
   transition: all 0.15s;
+}
+
+button.ghost.dark.disabled, button.ghost.dark.disabled:hover {
+  opacity: 0.4;
+  background-color: transparent;
+  border: 3px solid #272B32;
+  color: #272B32;
 }
 
 button.ghost.dark:hover {
@@ -495,29 +604,45 @@ button.back.dark  {
 
 /*============================FONT====================*/
 h1 {
-  text-transform: uppercase !important;
-  font-family: Arial-Black !important;
-  font-size: 32px !important;
-  color: #272B32 !important;
-  letter-spacing: 0.75px !important;
-  line-height: 36px !important;
-  margin-top: 32px !important;
-  margin-bottom: 16px !important;
+  font-family: SourceSansPro-Bold !important;
+  font-size: 48px !important;
+  color: #000000 !important;
+  letter-spacing: 1px !important;
+  line-height: 60px !important;
+}
+
+.splash-text {
+  font-family: SourceSansPro-Bold;
+  font-size: 120px;
+  color: #EDF1F5;
+  letter-spacing: 2.5px;
+  width: inherit;
+  width: 9999px;
+  text-transform: uppercase;
+  z-index: 0;
+  margin-bottom: -108px;
+  margin-left: -20px;
+  margin-top: -60px;
+}
+
+.hero {
+  font-family: SourceSansPro-Regular !important;
+  font-size: 20px !important;
+  color: #727C86 !important;
+  letter-spacing: 0px !important;
+  line-height: 26px !important;
 }
 
 h2 {
-  font-family: Arial-Black !important;
-  font-size: 28px !important;
-  color: #D4D4D4 !important;
-  letter-spacing: 0.75px !important;
-  line-height: 48px !important;
-  margin-top: 8px !important;
-  margin-bottom: 16px !important;
-  text-transform: uppercase;
+  font-family: Diaria-Pro-Bold !important;
+  font-size: 32px !important;
+  color: #000000 !important;
+  letter-spacing: 0.66px !important;
+  line-height: 40px !important;
 }
 
 h3 {
-  font-family: Georgia-Bold !important;
+  font-family: Diaria-Pro-Regular !important;
   font-size: 24px !important;
   color: #272B32 !important;
   line-height: 36px !important;
@@ -526,31 +651,29 @@ h3 {
 }
 
 .body {
-  font-family: Georgia;
-  font-size: 20px;
+  font-family: DiariaPro-Regular;
+  font-size: 18px;
   color: #101114;
   letter-spacing: 0px;
-  line-height: 26px;
+  line-height: 28px;
   margin-bottom: 24px;
 }
 
 .subtitle {
-  font-family: .SFNSDisplay-Regular;
-  font-size: 18px;
-  color: #272B32;
-  letter-spacing: 0px;
-  line-height: 27px;
-  margin-bottom: 24px !important;
+  font-family: SourceSansPro-Regular !important;
+  font-size: 16px !important;
+  color: #272B32 !important;
+  letter-spacing: 0px !important;
+  line-height: 24px !important;
+  margin-bottom: 16px;
 }
 
 .title {
-  font-family: Arial-Black;
-  font-size: 36px;
-  color: #272B32;
+  font-family: SourceSansPro-Bold;
+  font-size: 48px;
+  color: #000000;
   letter-spacing: 1px;
-  line-height: 48px;
-  text-transform: uppercase;
-  margin-bottom: 56px;
+  margin-bottom: 48px;
 }
 
 .title.light {
@@ -581,5 +704,27 @@ h3 {
 }
 
 .intro {
-  margin-bottom: 36px;
+  margin-bottom: 0px;
+}
+
+.intro>.hero {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  left: 0px;
+  right: 0px;
+}
+
+ul.chips>li {
+  float: left;
+  color: #272B32;
+  border-radius: 24px;
+  border: 2px solid #272B32;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 24px;
+  width: auto;
+  margin-right: 16px;
+  margin-bottom: 16px;
 }
