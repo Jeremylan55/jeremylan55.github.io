@@ -511,17 +511,21 @@ a {
   cursor: pointer;
 }
 
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+}
 a:hover {
   text-decoration: none !important;
 }
 .body>a {
-  font-family: Georgia-Bold;
+  font-family: Diaria-Pro-Regular;
   /*color: #000 !important;*/
   color: #3A63A4 !important;
 }
 
 .body>a:hover {
-  font-family: Georgia-Bold;
+  font-family: Diaria-Pro-Regular;
   color: #3A63A4 !important;
 }
 
@@ -641,7 +645,7 @@ h1 {
 }
 
 h2 {
-  font-family: Diaria-Pro-Bold !important;
+  font-family: SourceSansPro-Bold !important;
   font-size: 32px !important;
   color: #000000 !important;
   letter-spacing: 0.66px !important;
@@ -649,7 +653,7 @@ h2 {
 }
 
 h3 {
-  font-family: Diaria-Pro-Regular !important;
+  font-family: SourceSansPro-Regular !important;
   font-size: 24px !important;
   color: #272B32 !important;
   line-height: 36px !important;
@@ -658,7 +662,7 @@ h3 {
 }
 
 .body {
-  font-family: DiariaPro-Regular;
+  font-family: SourceSansPro-Regular !important;
   font-size: 18px;
   color: #101114;
   letter-spacing: 0px;
@@ -688,7 +692,7 @@ h3 {
 }
 
 .caption {
-  font-family: .SFNSDisplay-Regular;
+  font-family: SourceSansPro-Regular;
   font-size: 16px;
   color: #88898C;
   letter-spacing: 0px;
