@@ -64,6 +64,22 @@ section:last-child {
   right: 0px;
 }
 
+.container-720 {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0px;
+}
+
+.container-560 {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0px;
+}
+
 .preview {
 }
 .description {
@@ -91,7 +107,7 @@ section:last-child {
     height: auto;
   }
   .project-container {
-    width: 100%;
+    max-width: 100%;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 16px;
@@ -247,7 +263,7 @@ section:last-child {
   }
   .project-container {
     width: 100%;
-    padding: 32px;
+    padding: 16px !important;
   }
   section {
     padding-left: 32px;
@@ -310,7 +326,7 @@ footer {
   width: 100%;
   height: 36px;
   padding: 0px;
-  margin-bottom: 58px;
+  margin-bottom: 36px;
 }
 
 .split-3 {
@@ -329,7 +345,7 @@ ul.no-style {
 }
 
 .split-5>li>div {
-  width: 20%;
+  width: 25%;
   float: left;
 }
 
@@ -339,8 +355,8 @@ ul.no-style {
 }
 
 .icon {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   margin-left: auto;
   margin-right: auto;
   left: 0px;
@@ -414,7 +430,7 @@ ul.no-style {
 .banner {
   width: 100vw;
   height: 230px;
-  background: none !important;
+  /* background: none !important; */
   margin-bottom: -230px;
 }
 
@@ -501,7 +517,7 @@ section>.divider {
 .navigator>ul>div>li>a {
   text-transform: uppercase;
   width: 100% !important;
-  font-family: Arial-Black;
+  font-family: SourceSansPro-Black !important;
   font-size: 16px;
   color: #272B32;
   letter-spacing: 0.33px;
