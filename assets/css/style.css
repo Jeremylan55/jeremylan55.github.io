@@ -263,7 +263,7 @@ section:last-child {
   }
   .project-container {
     width: 100%;
-    padding: 16px !important;
+    padding: 32px;
   }
   section {
     padding-left: 32px;
@@ -318,7 +318,7 @@ section:last-child {
 
 footer {
   width: 100vw;
-  background-color: #272B32;
+  background-color: #101114;
   height: 182px;
   padding-top: 26px;
 }
@@ -326,7 +326,7 @@ footer {
   width: 100%;
   height: 36px;
   padding: 0px;
-  margin-bottom: 36px;
+  margin-bottom: 72px;
 }
 
 .split-3 {
@@ -342,6 +342,7 @@ footer {
 
 ul.no-style {
   list-style-type: none;
+  margin-left: auto;
 }
 
 .split-5>li>div {
@@ -429,7 +430,7 @@ ul.no-style {
 
 .banner {
   width: 100vw;
-  height: 230px;
+  height: 140px;
   /* background: none !important; */
   margin-bottom: -230px;
 }
@@ -547,6 +548,7 @@ a:hover {
 
 ul {
   padding-left: 0px;
+  margin-left: 24px;
 }
 /*============================BUTTON====================*/
 button {
