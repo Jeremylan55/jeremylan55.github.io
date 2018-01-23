@@ -40,7 +40,7 @@
 
 /*============================UI====================*/
 html {
-  background: #272B32;
+  background: #101114;
 }
 html, body {
     max-width: 100%;
@@ -234,9 +234,9 @@ section:last-child {
 
   ul.chips>li {
     float: left;
-    color: #272B32;
+    color: #101114;
     border-radius: 24px;
-    border: 2px solid #272B32;
+    border: 2px solid #101114;
     padding-left: 12px;
     padding-right: 12px;
     height: 24px;
@@ -465,7 +465,7 @@ section>.divider {
   display: none;
   height: 4px;
   width: 48px;
-  background-color: #272B32;
+  background-color: #101114;
 }
 .image.row {
     margin-left: -12px;
@@ -520,7 +520,7 @@ section>.divider {
   width: 100% !important;
   font-family: SourceSansPro-Black !important;
   font-size: 16px;
-  color: #272B32;
+  color: #101114;
   letter-spacing: 0.33px;
 }
 
@@ -555,7 +555,7 @@ button {
   height: 36px;
   width: 140px;
   font-size: 18px;
-  color: #272B32;
+  color: #101114;
   letter-spacing: 0.33px;
   outline: none;
   font-family: SourceSansPro-Black !important;
@@ -566,8 +566,8 @@ button {
 
 button.ghost.dark {
   background-color: transparent;
-  border: 3px solid #272B32;
-  color: #272B32;
+  border: 3px solid #101114;
+  color: #101114;
   -webkit-transition: all 0.15s; /* Safari */
   transition: all 0.15s;
 }
@@ -575,13 +575,13 @@ button.ghost.dark {
 button.ghost.dark.disabled, button.ghost.dark.disabled:hover {
   opacity: 0.4;
   background-color: transparent;
-  border: 3px solid #272B32;
-  color: #272B32;
+  border: 3px solid #101114;
+  color: #101114;
 }
 
 button.ghost.dark:hover {
-  background-color: #272B32;
-  border: 3px solid #272B32;
+  background-color: #101114;
+  border: 3px solid #101114;
   color: #ffffff;
 }
 
@@ -596,7 +596,7 @@ button.dark.arrow-right:hover {
   padding-right: 19px;
   background: url(../UI/arrow_right_light.svg) no-repeat;
   background-position: 94px center;
-  background-color: #272B32;
+  background-color: #101114;
 }
 
 .description>button {
@@ -673,7 +673,7 @@ h2 {
 h3 {
   font-family: SourceSansPro-Regular !important;
   font-size: 24px !important;
-  color: #272B32 !important;
+  color: #101114 !important;
   line-height: 36px !important;
   margin-top: 32px !important;
   margin-bottom: 8px !important;
@@ -691,7 +691,7 @@ h3 {
 .subtitle {
   font-family: SourceSansPro-Regular !important;
   font-size: 16px !important;
-  color: #272B32 !important;
+  color: #101114 !important;
   letter-spacing: 0px !important;
   line-height: 24px !important;
   margin-bottom: 16px;
@@ -725,7 +725,7 @@ h3 {
   text-transform: uppercase !important;
   font-family: Arial-Black !important;
   font-size: 48px !important;
-  color: #272B32 !important;
+  color: #101114 !important;
   letter-spacing: 0.75px !important;
   line-height: 36px !important;
   margin-top: 32px !important;
@@ -747,9 +747,9 @@ h3 {
 
 ul.chips>li {
   float: left;
-  color: #272B32;
+  color: #101114;
   border-radius: 24px;
-  border: 2px solid #272B32;
+  border: 2px solid #101114;
   padding-left: 12px;
   padding-right: 12px;
   height: 24px;
