@@ -398,6 +398,12 @@ ul.no-style {
   background-size: contain;
 }
 
+#artstation>div>a>.icon.dark {
+  background: url(../UI/artstation_dark.svg) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
 #artstation>div>a>.icon {
   background: url(../UI/artstation.svg) no-repeat;
   background-position: center center;
