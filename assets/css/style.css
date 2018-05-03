@@ -118,7 +118,7 @@ section:last-child {
     border-left: 0px !important;
     border-right: 0px !important;
     border-bottom: none !important;
-    border-top: 2px solid #EDF1F5 !important;
+    border-top: 1px solid #EDF1F5 !important;
   }
 
   .project-container:last-child>a>.row, .project-container:last-child>a:visited>.row {
