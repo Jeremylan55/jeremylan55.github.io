@@ -633,6 +633,7 @@ h1 {
 }
 
 .splash-text {
+  /* display: none; */
   font-family: SourceSansPro-Bold;
   font-size: 120px;
   color: #EDF1F5;
@@ -756,4 +757,5 @@ ul.chips>li {
   width: auto;
   margin-right: 16px;
   margin-bottom: 16px;
+  display: none;
 }
