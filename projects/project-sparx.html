@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Tue Jun 23 2020 04:50:49 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Wed Jun 24 2020 21:22:45 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5ee5d1e19f82301f32dcb454" data-wf-site="5ee5ceecc1a7f0914eb32ee2">
 <head>
   <meta charset="utf-8">
@@ -24,18 +24,24 @@
     <div class="container w-container"><a href="#" class="brand-2 w-nav-brand"><img src="../images/jeremy.svg" alt="" class="image-5"></a>
       <nav role="navigation" class="nav-menu w-nav-menu"><a href="../index.html" class="nav-link w-nav-link">Projects</a><a href="../about.html" class="nav-link w-nav-link">About</a></nav>
       <div class="menu-button w-nav-button">
-        <div class="w-icon-nav-menu"></div>
+        <div class="icon-2 w-icon-nav-menu"></div>
       </div>
     </div>
   </div>
-  <div class="w-embed w-script">
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-      <title></title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <style>
+  <div class="fullscreen">
+    <div class="lock-container">
+      <div class="icon-large"></div>
+      <h2 class="text-center">Protected page</h2>
+      <p class="paragraph-4">Enter password to view project</p>
+      <div class="password-form">
+        <div class="html-embed w-embed w-script">
+          <!DOCTYPE html>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+          <head>
+            <title></title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          </head>
+          <style>
 body {
 	background-color: #FFFFFF;
 	background-attachment: fixed;
@@ -46,11 +52,9 @@ body {
    font-family: Sourcesanspro;
 }
 .box {
-	border-radius: 3px;
-	margin: auto; padding: 12px;
+	margin: auto;
 }
 .lightbox {
-	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -142,21 +146,20 @@ button#loginbutton:active {
    font-family: Sourcesanspro;
 }
 </style>
-    <body>
-      <div id="loginbox" class="lightbox">
-        <div class="horizontal">
-          <div class="vertical">
-            <div class="box">
-              <input style="text-align: center;" id="password" type="password" placeholder="Enter password"> <br>
-              <button id="loginbutton" type="button">Enter</button>
-              <p id="wrongPassword" style="display: none">wrong password</p>
+          <div id="loginbox" class="lightbox">
+            <div class="horizontal">
+              <div class="vertical">
+                <div class="box">
+                  <input style="text-align: center;" id="password" type="password" placeholder="Enter password"> <br>
+                  <button id="loginbutton" type="button">Enter</button>
+                  <p id="wrongPassword" style="display: none">wrong password</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-      <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
-      <script type="text/javascript">
+          <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+          <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+          <script type="text/javascript">
 	"use strict";
 	function loadPage(pwd) {
 		var hash= pwd;
@@ -186,8 +189,11 @@ button#loginbutton:active {
 	});
 	$("#password").focus();
 	</script>
-    </body>
-    </html>
+          </html>
+        </div>
+      </div>
+      <div class="caption">Please contact me to access. <a href="mailto:jeremylan55@gmail.com?subject=Portfolio%20password" class="caption link-inline">Request access</a></div>
+    </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ee5ceecc1a7f0914eb32ee2" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="../js/webflow.js" type="text/javascript"></script>
