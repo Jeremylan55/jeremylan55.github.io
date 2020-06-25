@@ -141,6 +141,10 @@ blockquote {
   background-color: #fafafa;
 }
 
+.section.footer.dark {
+  background-color: #1d1f20;
+}
+
 .section.sign {
   margin-top: 100px;
 }
@@ -207,6 +211,10 @@ blockquote {
 
 .d1.feature {
   margin-top: 20px;
+}
+
+.d1.light {
+  color: #fff;
 }
 
 .d2 {
@@ -557,12 +565,12 @@ blockquote {
   display: flex;
 }
 
-.nav-link {
-  color: #333;
-}
-
 .nav-link.w--current {
   color: #747474;
+}
+
+.nav-link.light {
+  color: #fff;
 }
 
 .heading-10 {
@@ -718,6 +726,7 @@ blockquote {
 
 .link-block {
   background-color: transparent;
+  cursor: pointer;
 }
 
 .lightbox-link {
@@ -793,13 +802,14 @@ blockquote {
 .project {
   display: block;
   overflow: hidden;
-  height: 400px;
+  height: 420px;
   border-radius: 16px;
+  cursor: pointer;
 }
 
 .project.feature {
   display: block;
-  height: auto;
+  height: 420px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -839,6 +849,10 @@ blockquote {
   background-color: #fff2e0;
 }
 
+.project.default.project-gi {
+  background-color: #ff8d1b;
+}
+
 .project.project-mylo {
   background-color: #0ea2f7;
 }
@@ -861,6 +875,7 @@ blockquote {
 .project-image.feature {
   position: relative;
   left: -37%;
+  top: 21px;
   z-index: 0;
   display: inline-block;
   overflow: visible;
@@ -1076,6 +1091,11 @@ blockquote {
   text-align: center;
 }
 
+.dark {
+  background-color: #131415;
+  color: #fff;
+}
+
 @media screen and (max-width: 991px) {
   .menu-button.w--open {
     background-color: #fff;
@@ -1090,6 +1110,12 @@ blockquote {
     -ms-flex-pack: end;
     justify-content: flex-end;
     background-color: #fff;
+  }
+  .project.feature {
+    height: 420px;
+  }
+  .project.feature.project-sparx {
+    height: 420px;
   }
   .icon-2 {
     color: #333;
@@ -1137,9 +1163,6 @@ blockquote {
   }
   .image-6 {
     display: none;
-  }
-  .project.feature.project-sparx {
-    height: 400px;
   }
   .project-image.feature {
     left: -52%;
@@ -1219,9 +1242,6 @@ blockquote {
   }
   .image-6 {
     display: none;
-  }
-  .project.feature.project-sparx {
-    height: 400px;
   }
   .project-image.feature {
     left: -53%;
