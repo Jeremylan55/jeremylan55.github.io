@@ -681,7 +681,7 @@ blockquote {
 }
 
 .button {
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png');
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
   background-position: 0px 0px;
   background-size: 125px;
 }
@@ -805,7 +805,8 @@ blockquote {
 .grid {
   grid-column-gap: 26px;
   grid-row-gap: 16px;
-  grid-template-areas: "Area-2 Area" ". Area";
+  grid-template-areas: "Area-2 Area"
+    ". Area";
 }
 
 .project {
@@ -827,17 +828,24 @@ blockquote {
   color: #333;
 }
 
-.project.feature.project-sparx {
+.project.feature.project-mc {
   background-color: #ebebeb;
+  background-image: url('../images/Frame-1.png');
+  background-position: 0px 0px;
+  background-size: cover;
 }
 
-.project.feature.project-sparx.float {
+.project.feature.project-mc.float {
   -webkit-transition: box-shadow 200ms ease;
   transition: box-shadow 200ms ease;
 }
 
-.project.feature.project-sparx.float:hover {
+.project.feature.project-mc.float:hover {
   box-shadow: 0 20px 40px 11px rgba(0, 0, 0, 0.14);
+}
+
+.project.feature.project-va {
+  background-color: #ff4747;
 }
 
 .project.project-petal {
@@ -860,6 +868,10 @@ blockquote {
 
 .project.default.project-gi {
   background-color: #ff8d1b;
+}
+
+.project.default.project-sparx {
+  background-color: #ebebeb;
 }
 
 .project.project-mylo {
@@ -893,17 +905,28 @@ blockquote {
   max-height: 400px;
   max-width: none;
   min-width: 0px;
-  background-color: #ebebeb;
+  background-color: transparent;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: 0% 50%;
   object-position: 0% 50%;
 }
 
+.project-image.feature.ea-logo {
+  position: relative;
+  background-image: url('../images/EA-Vector.svg');
+  background-position: 50% 50%;
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+}
+
 .project-image.default {
   position: relative;
   top: -50px;
   z-index: 0;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .project-title {
@@ -1115,11 +1138,14 @@ blockquote {
 
 @media screen and (max-width: 991px) {
   .menu-button.w--open {
-    background-color: #131415;
+    background-color: transparent;
+    color: #333;
   }
+
   .menu-button.dark {
     background-color: transparent;
   }
+
   .nav-link {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1131,15 +1157,19 @@ blockquote {
     justify-content: flex-end;
     background-color: #fff;
   }
+
   .nav-link.light {
     background-color: #131415;
   }
+
   .project.feature {
     height: 420px;
   }
-  .project.feature.project-sparx {
+
+  .project.feature.project-mc {
     height: 420px;
   }
+
   .icon-2 {
     color: #333;
   }
@@ -1150,26 +1180,32 @@ blockquote {
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .d1.feature {
     font-size: 32px;
     line-height: 48px;
   }
+
   .columns {
     margin-right: 0px;
     margin-left: 0px;
   }
+
   .columns.center {
     display: block;
   }
+
   .justify-left {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
   }
+
   .menu-button {
     background-color: #fff;
   }
+
   .nav-link {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1181,17 +1217,21 @@ blockquote {
     justify-content: flex-end;
     background-color: #fff;
   }
+
   .image-6 {
     display: none;
   }
+
   .project-image.feature {
     left: -52%;
     top: -7px;
   }
+
   .stamp {
     z-index: 0;
     text-transform: none;
   }
+
   .icon-2 {
     color: #333;
   }
@@ -1202,17 +1242,21 @@ blockquote {
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .column.p-20 {
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .d1.feature {
     font-size: 32px;
     line-height: 48px;
   }
+
   .columns.center {
     display: block;
   }
+
   .columns.feature {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1222,22 +1266,24 @@ blockquote {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+
   .container.hero--landing {
     padding-right: 10px;
     padding-left: 10px;
   }
+
   .store-badge {
     width: 157px;
   }
+
   .justify-left {
     display: block;
   }
+
   .menu-button {
     background-color: transparent;
   }
-  .menu-button.w--open {
-    color: #fff;
-  }
+
   .nav-link {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1249,33 +1295,41 @@ blockquote {
     justify-content: flex-end;
     background-color: #fff;
   }
+
   .nav-link.light {
     background-color: #131415;
   }
+
   .iam {
     font-size: 64px;
     line-height: 72px;
   }
+
   .one-liner {
     font-size: 24px;
     line-height: 36px;
   }
+
   .image-5 {
     width: 50px;
     height: 50px;
     margin: 5px;
   }
+
   .image-6 {
     display: none;
   }
+
   .project-image.feature {
     left: -53%;
     top: -95px;
   }
+
   .project-title {
     margin-right: 10px;
     margin-left: 10px;
   }
+
   .outside-links {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -1305,58 +1359,68 @@ blockquote {
   src: url('../fonts/materialdesignicons-webfont.ttf') format('truetype'), url('../fonts/materialdesignicons-webfont.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Sourcesanspro';
   src: url('../fonts/SourceSansPro-BlackIt.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Sourcesanspro it';
   src: url('../fonts/SourceSansPro-It.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Sourcesanspro';
   src: url('../fonts/SourceSansPro-Bold.otf') format('opentype'), url('../fonts/SourceSansPro-BoldIt-2.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Sourcesanspro 2';
   src: url('../fonts/SourceSansPro-ExtraLight.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Sourcesanspro';
   src: url('../fonts/SourceSansPro-ExtraLightIt.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Sourcesanspro';
   src: url('../fonts/SourceSansPro-Light.otf') format('opentype'), url('../fonts/SourceSansPro-LightIt.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Sourcesanspro';
   src: url('../fonts/SourceSansPro-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Sourcesanspro';
   src: url('../fonts/SourceSansPro-Semibold.otf') format('opentype'), url('../fonts/SourceSansPro-SemiboldIt.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Garamond premier pro display';
   src: url('../fonts/Garamond-Premier-Pro-Display.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
+  font-display: auto;
 }
